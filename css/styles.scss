@@ -1,0 +1,158 @@
+$f1: 'Sarabun';
+$f2: 'Source Sans Pro';
+$clrJs: rgb(216, 197, 76);
+
+body {
+   font: 1rem $f2, arial, helvetica;
+   scroll-behavior: smooth;
+}
+
+a {
+   text-decoration: none;
+}
+
+.container {
+   max-width: 50em;
+   margin: 0 auto;
+   padding: 1em;
+}
+
+.btn {
+   all: unset;
+   cursor: pointer;
+}
+
+.to-top {
+   bottom: .5em;
+   color: #666;
+   font-size: 1.5rem;
+   left: .5em;
+   position: fixed;
+   transition: color 300ms ease;
+   z-index: 10;
+   &:hover {
+      color: #111;
+   }
+}
+
+
+.nav-header {
+   border-bottom: .095em solid rgba(51, 51, 51, 0.171);
+   display: flex;
+   justify-content: space-between;
+   padding: .5em 0;
+
+   &__link,
+   &__btn {
+      color: #555;
+      padding: .5em;
+   }
+
+   &__link {
+      font-family: $f1;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+   }
+
+   &__btn {
+      font-size: 1.125rem;
+      transition: color 300ms ease;
+
+      &:hover {
+         color: #111;
+      }
+   }
+
+}
+
+
+.menu {
+   border-left: .125em solid rgba(51, 51, 51, 0.212);
+   height: 100%;
+   margin: 0;
+   overflow-y: scroll;
+   position: fixed;
+   padding: 0;
+   right: 0;
+   top: 0;
+   transition: all 300ms ease;
+   transform: translateX(20em);
+   visibility: hidden;
+   z-index: 10;
+   &__is-active {
+      transform: translateX(0);
+      visibility: visible;
+      width: 20em;
+   }
+
+   &__links-container {
+      display: flex;
+      flex-flow: column nowrap;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+   }
+
+   &__item {
+      margin: 0;
+   }
+
+   &__link {
+      background: #fff;
+      border-bottom: .125em solid rgba(0, 0, 0, 0.13);
+      color: #333;
+      display: block;
+      padding: 1em;
+
+      &:hover {
+         background: rgb(228, 228, 228);
+      }
+   }
+}
+
+.item {
+   border: .095em solid rgba(51, 51, 51, 0.11);
+   color: #111;
+   font-weight: 300;
+   line-height: 1.5;
+   margin: 1em 0;
+   padding: 1em;
+
+   &__title {
+      color: #333;
+      font-size: 2rem;
+      font-weight: 400;
+   }
+
+   &__text {
+      color: #111;
+      font-weight: 300;
+   }
+
+   &__list {
+      display: flex;
+      flex-flow: column nowrap;
+   }
+
+   &__li {
+      color: inherit;
+      margin: .5em 0;
+   }
+
+   &__code-snippet {
+      background: rgba(204, 204, 204, 0.164);
+      color: #444;
+      display: block;
+      line-height: 1.75;
+      padding: 1em 2em;
+      text-align: left;
+      white-space: pre;
+      word-break: normal;
+      word-wrap: normal;
+   }
+
+   &__link {
+      color: blue;
+   }
+}

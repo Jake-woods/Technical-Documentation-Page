@@ -121,6 +121,8 @@ a {
 
 .item {
   border: 0.095em solid rgba(51, 51, 51, 0.11);
+  -webkit-box-shadow: 0.125em 0.125em 0.65em rgba(0, 0, 0, 0.062);
+          box-shadow: 0.125em 0.125em 0.65em rgba(0, 0, 0, 0.062);
   color: #111;
   font-weight: 300;
   line-height: 1.5;

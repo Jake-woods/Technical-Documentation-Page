@@ -80,6 +80,7 @@ a {
   -webkit-transform: translateX(20em);
           transform: translateX(20em);
   visibility: hidden;
+  width: 20em;
   z-index: 10;
 }
 
@@ -87,7 +88,6 @@ a {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   visibility: visible;
-  width: 20em;
 }
 
 .menu__links-container {
